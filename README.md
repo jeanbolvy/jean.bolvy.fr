@@ -16,12 +16,6 @@ bundle exec jekyll serve
 	- GitHub Page: [update `_config.yml`](#site-configuration)
 5. Run the Jekyll server: `bundle exec jekyll serve`
 
-### As a ruby gem 💎
-
-Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/sylhare/Type-On-Strap)
-
 ## Structure
 
 Here are the main files of the template
