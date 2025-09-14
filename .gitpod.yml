@@ -9,7 +9,7 @@ tasks:
     init: |
       bundle update
       bundle install
-  - name: Run type on strap
+  - name: Run Jean Bolvy
     init: bundle install
     command: bundle exec jekyll serve
 
@@ -18,7 +18,7 @@ vscode:
   extensions:
     - eamodio.gitlens
 
-# Ports configuration, since Gitpod needs to open Type on Strap on a new tab when the server loads up.
+# Ports configuration, since Gitpod needs to open Jean Bolvy on a new tab when the server loads up.
 ports:
   - port: 4000
     onOpen: open-browser

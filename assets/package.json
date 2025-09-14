@@ -1,7 +1,7 @@
 {
   "name": "type-on-strap-helper",
   "version": "2.4.12",
-  "description": "Gulp file to manage the Type on Strap jekyll theme",
+  "description": "Gulp file to manage the Jean Bolvy jekyll theme",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",

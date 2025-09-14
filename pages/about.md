@@ -1,14 +1,13 @@
 ---
 layout: page
-title: About
-permalink: /about/
-feature-img: "assets/img/pexels/travel.jpeg"
+title: À propos
+permalink: /a-propos/
+feature-img:
 tags: [Page]
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+Vous cherchez quelqu’un de qualifié pour la réalisation de la partie sonore de votre projet de film ou de jeu vidéo ? Vous êtes au bon endroit.
 
-Head over to the [theme's documentation](https://github.com/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+Je m’appelle Jean Bolvy. Je suis compositeur et sound designer à l’image.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
- 
+Mon travail vous intéresse ? N’hésitez-pas à me contacter par [mail](mailto:jean.bolvy@gmail.com) ou sur [Instagram](https://www.instagram.com/jeanbolvy/){:target="_blank"}.
