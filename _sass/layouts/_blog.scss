@@ -51,8 +51,12 @@
 
 /* --- Post listing --- */
 .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 3em;
+    @extend %padding-post;
+
     .post-teaser {
-        @extend %padding-post;
         width: 100%;
         margin-bottom: 0;
         display: inline-block;
@@ -108,4 +112,5 @@
 
 .home-video {
     width: 100%;
+    aspect-ratio: 16/9;
 }
