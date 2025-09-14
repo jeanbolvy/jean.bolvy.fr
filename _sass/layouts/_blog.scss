@@ -45,6 +45,10 @@
         center top;
 }
 
+.home-content {
+    @extend %padding-post;
+}
+
 /* --- Post listing --- */
 .posts {
     .post-teaser {

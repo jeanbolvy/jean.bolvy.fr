@@ -17,7 +17,7 @@
       <span class="meta-separator">-</span>
     {% endif %}
     {% assign date_month = date | date: "%m" | minus: 1 %}
-    <p class="meta">{{ site.data.language.str_months[date_month] | default: date | date: "%B" }} {{ date | date: "%d, %Y" }}</p>
+    <p class="meta">{{ site.data.language.str_months[date_month] | default: date | date: "%B" }} {{ date | date: "%Y" }}</p>
   </div>
   {% if include.last_modified %}
     {% assign last_modified_month = include.last_modified | date: "%m" | minus: 1 %}

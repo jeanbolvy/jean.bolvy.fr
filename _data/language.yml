@@ -1,24 +1,24 @@
 # Localization strings
-str_follow_on: "Follow on"
-str_rss_follow: "Follow RSS feed"
-str_share_on: "Share on"
-str_add_to: "Add to"
+str_follow_on: "Suivre sur"
+str_rss_follow: "Suivre le flux RSS"
+str_share_on: "Partager sur"
+str_add_to: "Ajouter à"
 str_email: "Email"
-str_tweet: "Tweet"
-str_pin_it: "Pin it"
-str_next_post: "Next post"
-str_previous_post: "Previous post"
-str_next_page: "Next"
-str_previous_page: "Prev"
-str_javascript_required_disqus: "Please enable JavaScript to view comments."
-str_no_result_found: "No result found"
-str_cookie_approve: "Approve"
-str_cookie_disclaimer: "We would like to use third party cookies and scripts to improve the functionality of this website."
-str_months: [January, February, March, April, May, June, July, August, September, October, November, December]
-str_dark: 'Dark'
-str_light: 'Light'
-str_date_format: '%B %-d, %Y'
-str_last_modified: 'Last modified on'
+str_tweet: "Tweeter"
+str_pin_it: "Épingler"
+str_next_post: "Article suivant"
+str_previous_post: "Article précédent"
+str_next_page: "Suivant"
+str_previous_page: "Précédent"
+str_javascript_required_disqus: "Veuillez activer JavaScript pour voir les commentaires."
+str_no_result_found: "Aucun résultat trouvé"
+str_cookie_approve: "Approuver"
+str_cookie_disclaimer: "Nous aimerions utiliser des cookies et scripts tiers pour améliorer la fonctionnalité de ce site web."
+str_months: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
+str_dark: "Sombre"
+str_light: "Clair"
+str_date_format: "%-d %B %Y"
+str_last_modified: "Dernière modification le"
 
 # Localization settings
-cusdis_lang: # zh-cn, es, tr, pt-BR
+cusdis_lang: fr # zh-cn, es, tr, pt-BR
