@@ -2,8 +2,7 @@
 layout: post
 title: Sauve qui feu !
 tags: [Test, Image]
-video: 
-https://www.youtube.com/embed/lU0r-fPbLsA?si=UZ75FanexYIpX57H
+video: https://www.youtube.com/embed/lU0r-fPbLsA?si=UZ75FanexYIpX57H
 ---
 
 Réalisation : Alyson Beunard-Bienvenu
