@@ -2,6 +2,7 @@
 layout: post
 title: Hide and seek
 tags: [Test, Image]
+video: https://player.vimeo.com/video/1009457814?h=8958eb0b6d
 ---
 
 # Hide and seek

@@ -12,6 +12,10 @@
         </div>
         {% endif %}
         <span>
+        {% if post.video %}
+        <iframe src="{{ post.video }}" frameborder="0" allowfullscreen class="home-video"></iframe>
+        {% endif %}
+        <span>
           <header>
             <h1>
               <a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">
