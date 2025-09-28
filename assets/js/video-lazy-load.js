@@ -10,12 +10,12 @@
     youtube: {
       embedPattern: /(?:youtube\.com\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
       thumbnailUrl: (id) => `https://img.youtube.com/vi/${id}/sddefault.jpg`,
-      embedUrl: (id) => `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`,
+      embedUrl: (id) => `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&enablejsapi=1`,
     },
     vimeo: {
       embedPattern: /(?:vimeo\.com\/video\/|player\.vimeo\.com\/video\/)(\d+)/,
       thumbnailUrl: (id) => `https://vumbnail.com/${id}.jpg`,
-      embedUrl: (id) => `https://player.vimeo.com/video/${id}?autoplay=1`,
+      embedUrl: (id) => `https://player.vimeo.com/video/${id}?autoplay=1&api=1`,
     },
   };
 
@@ -69,9 +69,30 @@
   }
 
   /**
+   * Pauses all currently playing videos
+   */
+  function pauseAllVideos() {
+    const playingContainers = document.querySelectorAll(".video-lazy-container.video-playing iframe");
+
+    playingContainers.forEach(function (iframe) {
+      // Send pause command to YouTube videos
+      if (iframe.src.includes("youtube.com")) {
+        iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+      }
+      // Send pause command to Vimeo videos
+      else if (iframe.src.includes("vimeo.com")) {
+        iframe.contentWindow.postMessage('{"method":"pause"}', "*");
+      }
+    });
+  }
+
+  /**
    * Loads the actual video iframe
    */
   function loadVideo(videoInfo, container) {
+    // Pause all other videos first
+    pauseAllVideos();
+
     const embedUrl = videoInfo.config.embedUrl(videoInfo.id);
     const iframe = document.createElement("iframe");
 
@@ -111,9 +132,11 @@
     // Load thumbnail
     createThumbnail(videoInfo, container);
 
-    // Add click handler
+    // Add click handler (only if not already playing)
     container.addEventListener("click", function () {
-      loadVideo(videoInfo, container);
+      if (!container.classList.contains("video-playing")) {
+        loadVideo(videoInfo, container);
+      }
     });
   }
 
