@@ -2,14 +2,19 @@
 layout: default
 ---
 <div class="home">
-    <div id="main" class="call-out call-out_img">
-        <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
+    {% if paginator.page == 1 or paginator.page == nil %}
+    <div id="main" class="home-title-section">
+        <h1 class="home-title">{{ site.title }}</h1>
+        {% if site.description %}
+        <p class="home-subtitle">{{ site.description }}</p>
+        {% endif %}
     </div>
 
     <div class="home-content">
         {% capture home_content %}{% include home-content.md %}{% endcapture %}
         {{ home_content | markdownify }}
     </div>
+    {% endif %}
     {% capture _blog %}{% include blog/blog.liquid %}{% endcapture %}
     {{ _blog | split: " " | join: " "}}
 </div>

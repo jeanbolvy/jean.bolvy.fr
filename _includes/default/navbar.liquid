@@ -7,9 +7,11 @@
 			<img alt="logo img" class="avatar" src="{{ site.avatar | relative_url }}" loading="lazy"/>
 		</a>
         {% endif %}
+        {% unless page.url == '/' or page.layout == 'home' %}
         <a class="site-title" aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
         {{ site.title }}
 		</a>
+        {% endunless %}
 	</div>
 
     <!-- Toggle menu -->
