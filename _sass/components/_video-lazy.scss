@@ -1,0 +1,142 @@
+/* Video Lazy Loading Styles */
+
+.video-lazy-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Thumbnail image */
+.video-lazy-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+
+    .video-lazy-container:hover & {
+        opacity: 1;
+    }
+}
+
+/* Play button */
+.video-play-button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 90px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    .video-play-icon {
+        width: 0;
+        height: 0;
+        border-left: 20px solid #fff;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        margin-left: 4px; /* Center the triangle */
+    }
+}
+
+/* Loaded state - hide loading spinner */
+.video-lazy-container.video-loaded {
+    .video-loading {
+        display: none;
+    }
+}
+
+/* Playing state - video iframe */
+.video-lazy-container.video-playing {
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .video-lazy-container {
+        &:hover {
+            transform: none; /* Disable hover effects on mobile */
+        }
+    }
+
+    .video-play-button {
+        width: 60px;
+        height: 60px;
+
+        .video-play-icon {
+            border-left-width: 15px;
+            border-top-width: 9px;
+            border-bottom-width: 9px;
+            margin-left: 3px;
+        }
+    }
+}
+
+/* Specific styles for home page videos */
+.home-video-lazy {
+    margin-bottom: 1rem;
+}
+
+/* Specific styles for post page videos */
+.post-video-lazy {
+    max-height: 600px;
+    margin: 1rem 0;
+}
+
+/* Loading animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Focus styles for accessibility */
+.video-lazy-container:focus,
+.video-play-button:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .video-play-button {
+        background-color: #000;
+        border: 2px solid #fff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .video-lazy-container,
+    .video-play-button,
+    .video-lazy-container img {
+        transition: none;
+    }
+
+    .video-loading-spinner {
+        animation: none;
+    }
+
+    .video-lazy-container:hover {
+        transform: none;
+    }
+}

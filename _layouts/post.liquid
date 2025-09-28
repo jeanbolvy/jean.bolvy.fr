@@ -7,7 +7,7 @@ layout: default
       {% include blog/post_info.liquid author=page.author date=page.date last_modified=page.last_modified %}
       {% if page.video %}
       <div class="video-container">
-          <iframe src="{{ page.video }}" frameborder="0" allowfullscreen class="post-video"></iframe>
+          {% include video/lazy-video.liquid video_url=page.video class="post-video-lazy" %}
       </div>
       {% endif %}
       {% if page.bootstrap %}<div class="bootstrap-iso">{% endif %}

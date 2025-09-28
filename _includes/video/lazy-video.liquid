@@ -1,0 +1,12 @@
+{% comment %}
+Lazy loading video include
+Usage: {% include video/lazy-video.liquid video_url=post.video class="additional-classes" %}
+{% endcomment %}
+
+{% assign video_url = include.video_url %}
+{% assign additional_class = include.class | default: "" %}
+
+{% if video_url %}
+<div class="video-lazy-container {{ additional_class }}" data-video-url="{{ video_url }}">
+</div>
+{% endif %}
