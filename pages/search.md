@@ -1,9 +1,8 @@
 ---
 layout: search
-title: search
+title: Rechercher
 permalink: /search/
-subtitle: "Rechercher"
-feature-img: "assets/img/pexels/search-map.jpeg"
+feature-img: 
 icon: "fa-search"
 excluded: true
 position: 4
