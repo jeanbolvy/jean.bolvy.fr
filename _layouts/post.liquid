@@ -15,13 +15,6 @@ layout: default
       {% if page.bootstrap %}</div>{% endif %}
     </section>
 
-    <!-- Social media shares -->
-    {% include social/share_buttons.liquid %}
-
-    <!-- Tag list -->
-    {% capture tag_list %}{{ page.tags | join: "|" }}{% endcapture %}
-    {% include default/tags_list.liquid tags=tag_list %}
-
 </article>
 
 {% include blog/post_footer.liquid color=page.color img=page.feature-img %}
