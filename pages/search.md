@@ -2,7 +2,7 @@
 layout: search
 title: 
 permalink: /search/
-subtitle: "Que recherchez-vous ?"
+subtitle: "Rechercher"
 icon: "fa-search"
 excluded: true
 position: 5
