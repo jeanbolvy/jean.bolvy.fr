@@ -32,7 +32,7 @@ layout: page
     {% include default/tags_list.liquid tags=rawtags %}
 
     <!-- Displays the posts and pages that contains the tag-->
-    <div class="posts">
+    <div class="">
         {% for tag in tags %}
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor">
             <a href="#{{ tag | cgi_escape }}"><i class="fas fa-tag fa-fw fa-sm"></i> {{ tag }}</a>
@@ -48,7 +48,6 @@ layout: page
             {% if page.tags contains tag %}
             <h5 class="tag-title">
                 <a href="{{ page.url | relative_url }}">
-                    <i class="far fa-file-image" aria-hidden="true"></i>
                     {{ page.title }}
                 </a>
                 {% include blog/post_info.liquid date=page.date %}
@@ -61,7 +60,6 @@ layout: page
             {% if post.tags contains tag %}
             <h5 class="tag-title">
                 <a href="{{ post.url | relative_url }}">
-                    <i class="far fa-file-alt" aria-hidden="true"></i>
                     {{ post.title }}
                 </a>
 
@@ -75,7 +73,6 @@ layout: page
             {% if note.tags contains tag %}
             <h5 class="tag-title">
                 <a href="{{ note.url | relative_url }}">
-                    <i class="far fa-file" aria-hidden="true"></i>
                     {{ note.title }}
                 </a>
 
