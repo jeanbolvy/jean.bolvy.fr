@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Motion Liquid
-tags: [Court-métrage]
+tags: [Court-métrage, Prise de vue réelle]
 video: https://www.youtube.com/embed/FcNCyvttC4I?si=tCv4dS0TfIPgkZyc
 ---
 
