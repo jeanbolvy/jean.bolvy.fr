@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kàtharsis
-tags: [Test, Image]
+tags: [Court-métrage, Prise de vue réelle]
 video: https://www.youtube.com/embed/Jy9bMsx7oKk?si=bwCmi0PB797DlvhN
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comme chien et chat
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://www.youtube.com/embed/lU0r-fPbLsA?si=UZ75FanexYIpX57H
 ---
 

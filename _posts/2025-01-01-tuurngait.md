@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tuurngait
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://player.vimeo.com/video/1047815558?fl=pl&fe=sh
 ---
 

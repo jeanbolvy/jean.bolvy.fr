@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Motion Liquid
-tags: [Test, Image]
+tags: [Court-métrage]
 video: https://www.youtube.com/embed/FcNCyvttC4I?si=tCv4dS0TfIPgkZyc
 ---
 

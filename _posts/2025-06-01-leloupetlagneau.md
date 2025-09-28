@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Le loup et l'agneau
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://www.youtube.com/embed/OpQN7__GBPU?si=66uJKeOfI-utlopH
 ---
 

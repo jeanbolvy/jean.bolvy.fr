@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flower Power
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://www.youtube.com/embed/cjU420Qpj5o?si=GQMjF0I6nYpYAUD-
 ---
 

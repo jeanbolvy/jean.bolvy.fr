@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide and seek
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://player.vimeo.com/video/1009457814?h=8958eb0b6d
 ---
 

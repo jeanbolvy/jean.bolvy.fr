@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sur les rails
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://www.youtube.com/embed/KW6xvPEWSiM?si=iV-uR5MFrZYIJtop
 ---
 

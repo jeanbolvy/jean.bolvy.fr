@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Eternal Wounds
-tags: [Test, Image]
+tags: [Jeu vidéo]
 video: https://www.youtube.com/embed/xwLrpd6W5E4?si=MR5HFpA3rrXCM_ww
 ---
 

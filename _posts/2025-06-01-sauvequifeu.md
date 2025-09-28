@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sauve qui feu !
-tags: [Test, Image]
+tags: [Court-métrage, Animation]
 video: https://www.youtube.com/embed/P4FRkaxhQpk?si=9vRN_MARY6KJLbXR
 ---
 
