@@ -1,8 +1,8 @@
 ---
 layout: search
-title: Search
+title: 
 permalink: /search/
-subtitle: "What are you looking for?"
+subtitle: "Que recherchez-vous ?"
 icon: "fa-search"
 excluded: true
 position: 5

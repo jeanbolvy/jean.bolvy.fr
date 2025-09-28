@@ -3,7 +3,6 @@ layout: page
 title: À propos
 permalink: /a-propos/
 feature-img:
-tags: [Page]
 ---
 
 Je fais de la musique depuis tout petit  
