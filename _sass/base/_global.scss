@@ -231,6 +231,10 @@ hr {
 a {
     color: var(--link);
     text-decoration: none;
+
+    &:hover {
+        color: var(--accent);
+    }
 }
 
 kbd {

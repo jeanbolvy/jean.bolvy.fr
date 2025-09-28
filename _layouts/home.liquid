@@ -2,14 +2,14 @@
 layout: default
 ---
 <div class="home">
-    {% if paginator.page == 1 or paginator.page == nil %}
     <div id="main" class="home-title-section">
-        <h1 class="home-title">{{ site.title }}</h1>
+        <h1 class="home-title"><a href="{{ site.url }}">{{ site.title }}</a></h1>
         {% if site.description %}
         <p class="home-subtitle">{{ site.description }}</p>
         {% endif %}
     </div>
 
+    {% if paginator.page == 1 or paginator.page == nil %}
     <div class="home-content">
         {% capture home_content %}{% include home-content.md %}{% endcapture %}
         {{ home_content | markdownify }}

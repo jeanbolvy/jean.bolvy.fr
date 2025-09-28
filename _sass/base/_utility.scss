@@ -52,10 +52,18 @@
 // Buttons
 .button {
     border-radius: 0.3em;
-    border: 1px solid;
+    border: 1px solid var(--link);
     display: inline-block;
     margin: 1em 0;
     padding: 0.5em 0.75em;
+    color: var(--link);
+    background-color: transparent;
+
+    &:hover {
+        background-color: var(--accent);
+        border-color: var(--accent);
+        color: var(--background);
+    }
 }
 
 a.button {
@@ -63,9 +71,12 @@ a.button {
 }
 
 .button-link {
+    color: var(--link);
+    border: 1px solid var(--link);
+
     &:hover {
-        background: var(--link);
-        border: 1px solid var(--link);
+        background: var(--accent);
+        border: 1px solid var(--accent);
         color: var(--background);
         text-decoration: none;
         filter: none;
@@ -73,16 +84,21 @@ a.button {
 }
 
 .body-link {
+    color: var(--link);
+
     &:hover {
         text-decoration: underline;
+        color: var(--accent);
         filter: brightness(0.85);
     }
 }
 
 .post-link {
+    color: var(--link);
+
     &:hover {
         text-decoration: none;
-        color: var(--link);
+        color: var(--accent);
     }
 }
 

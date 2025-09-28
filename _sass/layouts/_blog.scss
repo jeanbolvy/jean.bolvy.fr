@@ -57,7 +57,7 @@
         font-size: 3rem;
         font-weight: 300;
         margin-bottom: 0.5rem;
-        color: var(--h1);
+        color: var(--link);
         line-height: 1.2;
 
         /* --- Responsive --- */
@@ -79,6 +79,8 @@
         color: var(--meta);
         margin: 0;
         font-weight: 300;
+        border-bottom: 5px solid var(--date-tag);
+        display: inline-block;
 
         /* --- Responsive --- */
         @media screen and (max-width: $break) {

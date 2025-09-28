@@ -50,6 +50,10 @@
         font-weight: bold;
         font-family: $font-family-logo;
         font-size: 1.3em;
+
+        &:hover {
+            color: var(--accent);
+        }
     }
 }
 
@@ -76,7 +80,7 @@ nav {
 
     a {
         &:hover {
-            color: var(--link);
+            color: var(--accent);
         }
 
         &#pull {

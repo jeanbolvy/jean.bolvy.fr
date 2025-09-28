@@ -4,7 +4,6 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    background-color: #000;
     overflow: hidden;
     cursor: pointer;
     border-radius: 4px;
@@ -32,11 +31,16 @@
     right: 5%;
     width: 90px;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--date-tag);
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: var(--accent);
+    }
 
     .video-play-icon {
         width: 0;
@@ -69,12 +73,6 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .video-lazy-container {
-        &:hover {
-            transform: none; /* Disable hover effects on mobile */
-        }
-    }
-
     .video-play-button {
         width: 60px;
         height: 60px;
@@ -112,7 +110,7 @@
 /* Focus styles for accessibility */
 .video-lazy-container:focus,
 .video-play-button:focus {
-    outline: 2px solid #007acc;
+    outline: 2px solid var(--date-tag);
     outline-offset: 2px;
 }
 
@@ -120,23 +118,13 @@
 @media (prefers-contrast: high) {
     .video-play-button {
         background-color: #000;
-        border: 2px solid #fff;
+        border: 2px solid var(--date-tag);
     }
 }
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-    .video-lazy-container,
-    .video-play-button,
-    .video-lazy-container img {
-        transition: none;
-    }
-
     .video-loading-spinner {
         animation: none;
-    }
-
-    .video-lazy-container:hover {
-        transform: none;
     }
 }
