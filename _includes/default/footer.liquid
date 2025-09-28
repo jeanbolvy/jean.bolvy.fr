@@ -1,12 +1,7 @@
 <footer class="site-footer">
     <p class="text">
-        {{ site.footer_text | default: "Powered by <a href='https://jekyllrb.com/'>Jekyll</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Jean Bolvy</a>" }}</p>
-    <div class="footer-icons">
-        <ul>
-            <!-- Social icons from Font Awesome, if enabled -->
-            {% include social/icons.liquid %}
-        </ul>
-    </div>
+        &copy; {{ 'now' | date: "%Y" }} {{ site.title | default: "Jean Bolvy" }}
+    </p>
     {% if site.mermaid %}
         <script type="module">
           mermaid.initialize({ startOnLoad: false, theme: "default" });
