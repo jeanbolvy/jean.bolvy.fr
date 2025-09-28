@@ -1,5 +1,4 @@
 {% assign author = site.data.authors[include.author] %}
-{% assign date = include.date | default: "today" | date: site.data.language.str_date_format | default: '%B %-d, %Y' %}
 
 <div class="post-info">
   <div class="post-meta">
@@ -16,8 +15,8 @@
       </div>
       <span class="meta-separator">-</span>
     {% endif %}
-    {% assign date_month = date | date: "%m" | minus: 1 %}
-    <p class="meta">{{ site.data.language.str_months[date_month] }} {{ date | date: "%Y" }}</p>
+    {% assign date_month = include.date | date: "%m" | minus: 1 %}
+    <p class="meta">{{ site.data.language.str_months[date_month] }} {{ include.date | date: "%Y" }}</p>
   </div>
   {% if include.last_modified %}
     {% assign last_modified_month = include.last_modified | date: "%m" | minus: 1 %}
