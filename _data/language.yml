@@ -12,9 +12,23 @@ str_next_page: "Suivant"
 str_previous_page: "Précédent"
 str_javascript_required_disqus: "Veuillez activer JavaScript pour voir les commentaires."
 str_no_result_found: "Aucun résultat trouvé"
-str_cookie_approve: "Approuver"
+str_cookie_approve: "Autoriser"
 str_cookie_disclaimer: "Nous aimerions utiliser des cookies et scripts tiers pour améliorer la fonctionnalité de ce site web."
-str_months: [Janvier, Février, Mars, Avril, Mai, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre]
+str_months:
+  [
+    Janvier,
+    Février,
+    Mars,
+    Avril,
+    Mai,
+    Juin,
+    Juillet,
+    Août,
+    Septembre,
+    Octobre,
+    Novembre,
+    Décembre,
+  ]
 str_dark: "Sombre"
 str_light: "Clair"
 str_date_format: "%-d %B %Y"
