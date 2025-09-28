@@ -13,7 +13,7 @@
         {% endif %}
         <span>
         {% if post.video %}
-        <iframe src="{{ post.video }}" frameborder="0" allowfullscreen class="home-video"></iframe>
+        {% include video/lazy-video.liquid video_url=post.video class="home-video-lazy" %}
         {% endif %}
         <span>
           <header>
